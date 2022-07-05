@@ -1,0 +1,1170 @@
+*{
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: Gotham,Arial,sans-serif;
+  color: #242934;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+ background-color: black; 
+}
+
+/* *********************Max View Top Navbar********************************************/
+
+.container {
+display: flex;
+align-items: center;
+height: 80px;
+width: 100%;
+background-color: white;
+margin-top: 46px;
+
+}
+
+.form {
+  display: flex;
+margin-right: 5.5vw;
+margin-left: auto;
+  }
+
+.close-btn {
+  display: none;
+  font-size: 20px;
+}
+
+.list>a {
+  margin-left: 25px;
+  padding-bottom: 28px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.list>a:hover { 
+  border-bottom: solid rgb(90, 53, 214) 4px;
+}  
+
+.sub-list{
+  display: flex;
+align-items: center;
+  position: absolute;
+  top: 0px;
+  right: 40px;
+  color: white;
+}
+
+.myService {
+  color: white;
+  font-size: 14px;
+padding-top: 8px;
+padding-right: 15px;
+font-weight: bold;
+}
+
+.lang-btn {
+  border: none;
+  background: black;
+  color: white;
+padding: 14px 14px 10px 16px;
+  font-size: 15px;
+width: fit;
+font-weight: bold;
+margin: 0;
+}
+
+.lang-btn-active {
+ border: none;
+  background: white;
+  color: black;
+padding: 14px 14px 10px 16px;
+  font-size: 15px;
+width: fit;
+font-weight: bold;
+}
+
+.lang {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 40px;
+  right: 38.5px;
+  overflow-y: scroll;
+  background-color: white;
+  width: 183px;
+  height: 380px;
+}
+
+.active-lang {
+  display: flex;    
+}
+
+.lang>a{
+  padding-top: 10px;
+  padding-left: 10px;
+  color: black;
+}
+
+.arrow-class-w {
+  color: white;
+  text-align: center;
+background-color: black;
+padding: 12px 10px 8px 0px;
+}
+
+.arrow-class-b {
+  color: black;
+  text-align: center;
+background-color: white;
+padding: 12px 10px 8px 0px;
+}
+
+
+.lang-btn-box {
+display:flex;
+  font-size: 20px;
+margin-right: 3vw;
+}
+
+  .search {
+      height: 48px;
+    width: 22vw;
+      border: solid black 1px;
+      border-radius: 5px 0px 0px 5px;
+  }
+  
+
+
+  .search:focus{
+      box-shadow:
+      0 0 0 2px hsla(237, 59%, 37%, 0.807)
+  }
+
+  .submit {
+      height: 48px;
+      width: 52px;
+      background-color: rgba(166,38,57,1);
+      border: solid black 1px;
+      border-radius: 0px 5px 5px 0px;
+      cursor: pointer;
+      transition: background-color 2s;
+  }
+
+  .submit:hover {
+      background-color: rgb(227,24,55);
+  }
+
+  #submit>.fa-search {
+      color: white;
+  }
+
+
+.menu-container {
+display: none;
+}
+
+.logo1 {
+width: 55px;
+height: auto;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  margin-left: 2vw;
+}
+
+.splitter{
+  height:50px;
+  width: 0.8px;
+      background-color: rgba(205, 189, 189, 0.564);   
+}
+
+.logo2 {
+  width: 120px;
+  height: auto; 
+}
+
+.search2-container {
+  display: none;
+}
+
+
+
+
+
+/* *******************************Mobile Top Navbar****************************/
+
+
+
+@media screen and (max-width: 900px) {
+  
+  
+  .container {
+      display: flex;
+      flex-direction: column;
+      height: 60px;
+      align-items: flex-start;
+      width: 100%;
+    margin-top: 0px;
+    
+  }
+  
+  .center {
+      display: flex;
+      align-items: center;
+      position: absolute;
+      top: 0.7rem;
+      right: 37vw;
+      
+  }
+
+  .logo1 {
+      width: 40px;
+      height: auto;
+      }
+
+  .logo2 {
+      width: 90px;
+      height: auto; 
+  }
+
+  .splitter{
+      height:34px;
+      width: 0.8px;
+      background-color: rgba(205, 189, 189, 0.564);  
+  }
+
+  .menu-container {
+      display: flex;
+      flex-direction: column;
+      padding-left: 3vw;
+      padding-top: 0.9rem;
+      text-align: center;
+      }
+
+      .menu-text {
+          font-size: 11px;
+          border: none;
+          background-color: white;
+          cursor: pointer;
+      }
+
+.menu-bar {
+  background-color: white;
+  border: none;
+  font-size: 15px;
+}
+
+.menu-bar:hover {
+  cursor: pointer; 
+}
+
+  .search2-container{
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      top: 0.9rem;
+      right: 1.5rem;
+  }
+
+ .search2text {
+     font-size: 12px;
+ }
+
+  .form {
+  display: none;
+  }
+
+
+  .list {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 3.7rem;
+      left: 0%;
+      background-color: white;
+      height: 85.5vh;
+      width: 16.2rem;
+      overflow-y: scroll;
+      z-index: 1;
+  }
+
+  .active {
+      display: flex;
+  }
+
+  .list>a {
+      color: black;
+  }
+
+  .sub-list {
+    position: relative;
+      display: flex;
+      flex-direction: column;
+      font-size: 16px;
+      font-weight: bold;
+    padding-left: 65px;
+  }
+
+   .list>a:hover { 
+  border-bottom: none;
+}
+
+  .myService {
+    padding-top: 0px;
+      padding-bottom: 18px;
+      color: black;
+  }
+
+
+.list>.sub-list>.lang>a{
+  display: flex;
+position: relative;
+  padding-bottom: 24px;
+  text-decoration: none;
+  color: black;
+}
+
+.lang {
+  display: none;
+flex-direction: column;
+      margin-top: 15px;
+      padding-right: 73px;
+margin-left: 0px;
+position: relative;
+overflow: hidden;
+  background-color: white;
+  width: auto;
+  height: auto;
+  top: 0px;
+  left: 0px;
+}
+
+.lang>a {
+  font-size: 10px;
+  padding-top: 0px;
+  padding-left: 0px;
+}
+
+
+.lang-btn-box {
+display:flex;
+position: relative;
+  font-size: 20px;
+margin: 0px;
+padding: 0px;
+padding-top: 5px;
+margin-right: 22px;
+} 
+
+.active-lang {
+  display: flex;    
+}
+
+.lang-btn {
+  border: none;
+  background: white;
+  color: black;
+padding: 0px;
+  font-size: 15px;
+width: fit;
+font-weight: bold;
+}
+
+.lang-btn-active {
+ border: none;
+  background: white;
+  color: black;
+padding: 0px;
+  font-size: 15px;
+width: fit;
+font-weight: bold;
+}
+
+.arrow-class-w {
+  color: black;
+  text-align: center;
+background-color: white;
+padding: 0px;
+  padding-left: 10px;
+}
+
+.arrow-class-b {
+  color: black;
+  text-align: center;
+background-color: white;
+padding: 0px;
+padding-left: 10px;
+}
+
+.close-btn {
+  display: flex;
+  justify-content: end;
+  padding: 20px 30px 20px 0px;
+  
+}
+
+.close-btn-a{
+  border: none;
+  background-color: white;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.body-img {
+  width: 100vw;
+  min-height: 100vw;
+}
+
+.body-text {
+color: white;
+font-size: 4vw;
+width: 80vw;
+}
+
+.form1 {
+  display: flex;
+margin: 0px;
+  }
+
+.search1 {
+      height: 70px;
+    width: 80vw;
+      border: solid black 1px;
+      border-radius: 5px 0px 0px 5px;
+font-size: 20px;
+  }
+  
+
+
+  .search1:focus{
+      box-shadow:
+      0 0 0 2px hsla(237, 59%, 37%, 0.807)
+  }
+
+  .submit1 {
+      height: 70px;
+      width: 90px;
+      background-color: rgba(166,38,57,1);
+      border: solid black 1px;
+      border-radius: 0px 5px 5px 0px;
+      cursor: pointer;
+      transition: background-color 2s;
+  }
+
+  .submit1:hover {
+      background-color: rgb(227,24,55);
+  }
+
+  #submit1>.fa-search {
+      color: white;
+  }
+
+}
+
+
+
+
+/*********************************Body Max view*************************************/
+
+@media screen and (min-width: 1110px) {
+.body-img-larger {
+  display: flex;
+  width: 100%;
+  height: auto;
+}
+
+.body-img-large {
+  display: none;
+}
+
+.body-img-small {
+  display: none;
+}
+
+.body-container {
+  position: absolute;
+  top: 164px;
+}
+
+  .body-text {
+    color: white;
+    font-size: 34px;
+    width: 700px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-left:3.3vw;
+  }
+
+  .form1 {
+    display: flex;
+    margin: 0px;
+    margin-left:3.3vw;
+  }
+
+  .search1 {
+    height: 75px;
+    width: 610px;
+    border: solid black 1px;
+    border-radius: 5px 0px 0px 5px;
+    font-size: 20px;
+    margin-bottom: 80px;
+  }
+
+  .search1:focus {
+    box-shadow: 0 0 0 2px hsla(237, 59%, 37%, 0.807);
+  }
+
+  .submit1 {
+    height: 75px;
+    width: 90px;
+    background-color: rgba(166, 38, 57, 1);
+    border: none;
+    border-radius: 0 6px 6px 0;
+    cursor: pointer;
+    transition: background-color 2s;
+  }
+
+  .submit1:hover {
+    background-color: rgb(227, 24, 55);
+  }
+
+  #submit1 > .fa-search {
+    color: white;
+    font-size: 30px;
+  }
+
+}
+
+/************************************ Medium Body view**************************/
+@media screen and (max-width: 1110px) {
+.body-img-larger {
+  display: none;
+}
+
+.body-img-large {
+  display: flex;
+  width: 100%;
+  height: auto;
+}
+
+.body-img-small {
+  display: none;
+}
+
+.body-container {
+  position: absolute;
+  top: 20vw;
+}
+
+  .body-text {
+    color: white;
+    font-size: 34px;
+    width: 700px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-left:3.3vw;
+  }
+
+  .form1 {
+    display: flex;
+    margin: 0px;
+    margin-left:3.3vw;
+  }
+
+  .search1 {
+    height: 75px;
+    width: 610px;
+    border: solid black 1px;
+    border-radius: 5px 0px 0px 5px;
+    font-size: 20px;
+    margin-bottom: 80px;
+  }
+
+  .search1:focus {
+    box-shadow: 0 0 0 2px hsla(237, 59%, 37%, 0.807);
+  }
+
+  .submit1 {
+    height: 75px;
+    width: 90px;
+    background-color: rgba(166, 38, 57, 1);
+    border: none;
+    border-radius: 0 6px 6px 0;
+    cursor: pointer;
+    transition: background-color 2s;
+  }
+
+  .submit1:hover {
+    background-color: rgb(227, 24, 55);
+  }
+
+  #submit1 > .fa-search {
+    color: white;
+    font-size: 30px;
+  }
+}
+
+
+/******************************** Small Body View ***********************************/
+
+@media screen and (max-width: 930px) {
+  .body-img-larger {
+    display: none;
+  }
+
+  .body-img-large {
+    display: none;
+  }
+
+  .body-img-small {
+    display: flex;
+    width: 100%;
+    height: auto;
+  }
+
+  .body-container {
+    position: absolute;
+    top: 14vw;
+  }
+  
+    .body-text {
+      color: white;
+      font-size: 26px;
+      width: 500px;
+      font-weight: bold;
+      margin-bottom: 20px;
+      margin-left:3.3vw;
+    }
+  
+    .form1 {
+      display: flex;
+      margin: 0px;
+      margin-left:3.3vw;
+    }
+  
+    .search1 {
+      height: 75px;
+      width: 450px;
+      border: solid black 1px;
+      border-radius: 5px 0px 0px 5px;
+      font-size: 20px;
+      margin-bottom: 80px;
+    }
+  
+    .search1:focus {
+      box-shadow: 0 0 0 2px hsla(237, 59%, 37%, 0.807);
+    }
+  
+    .submit1 {
+      height: 75px;
+      width: 90px;
+      background-color: rgba(166, 38, 57, 1);
+      border: none;
+      border-radius: 0 6px 6px 0;
+      cursor: pointer;
+      transition: background-color 2s;
+    }
+  
+    .submit1:hover {
+      background-color: rgb(227, 24, 55);
+    }
+  
+    #submit1 > .fa-search {
+      color: white;
+      font-size: 30px;
+    }
+}
+
+
+
+
+/******************************** Micro body view **************************************/
+@media screen and (max-width: 700px) {
+
+  .body-container {
+    position: absolute;
+    top: 24vw;
+  }
+  
+    .body-text {
+      color: white;
+      font-size: 18px;
+      width: 330px;
+      font-weight: bold;
+      margin-bottom: 20px;
+      margin-left:3.3vw;
+    }
+  
+    .body-img-larger {
+      display: none;
+    }
+  
+    .body-img-large {
+      display: none;
+    }
+  
+    .body-img-small {
+      display: flex;
+      width: 100%;
+      height: auto;
+    }
+
+    .form1 {
+      display: flex;
+      margin: 0px;
+      margin-left:3.3vw;
+    }
+  
+    .search1 {
+      height: 45px;
+      width: 380px;
+      border: solid black 1px;
+      border-radius: 5px 0px 0px 5px;
+      font-size: 14px;
+      margin: 0px;
+    }
+  
+    .search1:focus {
+      box-shadow: 0 0 0 2px hsla(237, 59%, 37%, 0.807);
+    }
+  
+    .submit1 {
+      height: 45px;
+      width: 45px;
+      background-color: rgba(166, 38, 57, 1);
+      border: none;
+      border-radius: 0 6px 6px 0;
+      cursor: pointer;
+      transition: background-color 2s;
+    }
+  
+    .submit1:hover {
+      background-color: rgb(227, 24, 55);
+    }
+  
+    #submit1 > .fa-search {
+      color: white;
+      font-size: 14px;
+    }
+  }
+
+
+
+  
+  /**************************** Tri box max View ******************************/
+
+  @media  screen and (min-width: 930px) {
+    
+  .popular-btn {
+    display: flex;
+    background-color: hsl(225, 100%, 20%);
+    font-size: 22px;
+    width: 300px;
+    padding: 20px 20px 20px 20px;
+    border-radius: 3px;
+    margin-left: 50px;
+    border: none;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .popular-arrow {
+    color: white;
+    margin-left:auto;
+  }
+  .popular-list{
+    display: none;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: hsl(225, 100%, 20%);
+    height: 150px;
+    padding:  10px;
+    list-style: none;
+    position: absolute;
+    top: 62px;
+  }
+  .popular-list-active{
+    display:flex;
+  }
+  .popular-list > li > a{
+    font-size: 16px;
+    color: white;
+  }
+  .popular-list > li {
+    padding: 5px;
+    width: 250px;
+  }
+  .storm-btn {
+    display: flex;
+    background-color: white;
+    font-size: 22px;
+    cursor: pointer;
+    width: 300px;
+    padding: 20px 20px 20px 20px;
+    border-radius: 3px;
+    margin-left: 10px;
+    border: none;
+    color: rgb(23, 17, 17);
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .storm-arrow {
+    color: black;
+    margin-left:auto;
+  }
+  
+  .storm-list{
+    display: none;
+    flex-wrap: wrap;
+    justify-content: space-between;
+      background-color: hsl(225, 100%, 20%);
+      height: 160px;
+      padding: 30px 100px 10px 40px;
+      list-style: none;
+      position: absolute;
+    top: 62px;
+  }
+  
+  .storm-list-active {
+    display: flex;
+  }
+  
+  .storm-list > li > a{
+    font-size: 16px;
+    color: white;
+  }
+  .storm-list > li {
+    padding: 10px 5px 5px 5px;
+    width: 260px;
+  }
+  .covid-btn {
+    display: flex;
+    background-color: rgb(230, 230, 0);
+    font-size: 22px;
+    cursor: pointer;
+    width: 300px;
+    padding: 20px 20px 20px 20px;
+    border-radius: 3px;
+    margin-left: 10px;
+    border: none;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .covid-arrow {
+    color: black;
+    margin-left:auto;
+  }
+  .covid-list{
+    display: none;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+    background-color: rgb(230, 230, 0);
+    height: 170px;
+    padding: 30px 10px 10px 10px;
+    list-style: none;
+    position: absolute;
+    top: 62px;
+  }
+  
+  .covid-list-active {
+    display: flex;
+  }
+  
+  .covid-list > li > a{
+    font-size: 16px;
+    color: rgb(15, 15, 15);
+  }
+  .covid-list > li {
+    padding: 0px 0 10px 0;
+    width: 250px;
+  }
+  .tri-btn-box{
+    display: flex;
+    position: relative;
+  }
+  }
+
+
+/**************************** Tri box Medium View ******************************/
+
+@media  screen and (max-width: 930px) {
+    
+  .popular-btn {
+    display: flex;
+    background-color: hsl(225, 100%, 20%);
+    font-size: 22px;
+    width: 300px;
+    padding: 20px 20px 20px 20px;
+    border-radius: 3px;
+    margin-left: 3vw;
+    border: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .popular-arrow {
+    color: white;
+    margin-left:auto;
+  }
+  .popular-list{
+    display: none;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: hsl(225, 100%, 20%);
+    height: 250px;
+    padding:  20px 12vw 20px 20px;
+    list-style: none;
+    margin: 0px;
+    position: absolute;
+    top: 60px;
+  }
+  .popular-list-active{
+    display:flex;
+  }
+  .popular-list > li > a{
+    font-size: 16px;
+    color: white;
+  }
+  .popular-list > li {
+    padding: 6px;
+    width: 250px;
+  }
+  .storm-btn {
+    display: flex;
+    background-color: white;
+    font-size: 18px;
+    cursor: pointer;
+    width: 300px;
+    padding: 20px 20px 20px 20px;
+    border-radius: 3px;
+    margin-left: 10px;
+    border: none;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .storm-arrow {
+    color: black;
+    margin-left:auto;
+  }
+  
+  .storm-list{
+    display: none;
+    flex-wrap: wrap;
+    justify-content: space-between;
+      background-color: hsl(225, 100%, 20%);
+      height: 250px;
+      padding: 20px 12vw 20px 20px;
+      list-style: none;
+      position: absolute;
+    top: 60px;
+  }
+  
+  .storm-list-active {
+    display: flex;
+  }
+  
+  .storm-list > li > a{
+    font-size: 16px;
+    color: white;
+  }
+  .storm-list > li {
+    padding: 10px 5px 5px 5px;
+    width: 260px;
+  }
+  .covid-btn {
+    display: flex;
+    background-color: rgb(230, 230, 0);
+    font-size: 18px;
+    cursor: pointer;
+    width: 300px;
+    padding: 20px 20px 20px 20px;
+    border-radius: 3px;
+    margin: 0px 0px 0px 10px;
+    border: none;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .covid-arrow {
+    color: black;
+    margin-left:auto;
+  }
+  .covid-list{
+    display: none;
+  flex-wrap: wrap;
+  justify-content: space-between;
+    background-color: rgb(230, 230, 0);
+    height: 280px;
+    padding: 20px 12vw 20px 20px;
+    list-style: none;
+    position: absolute;
+    top: 60px;
+  }
+  
+  .covid-list-active {
+    display: flex;
+  }
+  
+  .covid-list > li > a{
+    font-size: 16px;
+    color: rgb(15, 15, 15);
+  }
+  .covid-list > li {
+    padding: 0px 0 10px 0;
+    width: 250px;
+  }
+  .tri-btn-box{
+    display: flex;
+    margin-right: 2vw;
+    position: relative;
+  }
+  }
+
+
+
+/**************************** Tri box micro View ******************************/
+
+@media screen and (max-width: 700px) {
+  .popular-btn {
+    display: flex;
+    background-color: hsl(225, 100%, 20%);
+    font-size: 18px;
+    cursor: pointer;
+    width: 100%;
+    padding: 20px 20px 20px 20px;
+    border-radius: 3px;
+    margin: 30px 0 0 0;
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .popular-arrow {
+    color: white;
+    margin-left:auto;
+  }
+  .popular-list{
+    display: none;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: hsl(225, 100%, 20%);
+    height: 250px;
+    padding:  20px 5vw 5px 30px;
+    list-style: none;
+    width: 100%;
+    position: relative;
+    top: 0px;
+  }
+  .popular-list-active{
+    display:flex;
+  }
+  .popular-list > li > a{
+    font-size: 16px;
+    color: white;
+  }
+  .popular-list > li {
+    padding: 0px;
+    width: 210px;
+  }
+  .storm-btn {
+    display: flex;
+    background-color: white;
+    font-size: 22px;
+    cursor: pointer;
+    width: 100%;
+    padding: 20px 20px 20px 20px;
+    border-radius: 3px;
+    margin: 0px;
+    border: none;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .storm-arrow {
+    color: black;
+    margin-left:auto;
+  }
+  
+  .storm-list{
+    display: none;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+      background-color: hsl(225, 100%, 20%);
+      height: 250px;
+      padding:  20px 5vw 5px 30px;
+      list-style: none;
+      width: 100%;
+      position: relative;
+      top: 0px;
+  }
+  
+  .storm-list-active {
+    display: flex;
+  }
+  
+  .storm-list > li > a{
+    font-size: 16px;
+    color: white;
+  }
+  .storm-list > li {
+    padding: 0px;
+    width: 200px;
+  }
+  .covid-btn {
+    display: flex;
+    background-color: rgb(230, 230, 0);
+    font-size: 22px;
+    cursor: pointer;
+    width: 100%;
+    padding: 20px 20px 20px 20px;
+    border-radius: 3px;
+    margin-left: 0px;
+    border: none;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .covid-arrow {
+    color: black;
+    margin-left:auto;
+  }
+  .covid-list{
+    display: none;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+    background-color: rgb(230, 230, 0);
+    height: 300px;
+    padding:  20px 5vw 5px 30px;
+    list-style: none;
+    width: 100%;
+    position: relative;
+    top: 0px;
+  }
+  
+  .covid-list-active {
+    display: flex;
+  }
+  
+  .covid-list > li > a{
+    font-size: 16px;
+    color: rgb(15, 15, 15);
+  }
+  .covid-list > li {
+    padding: 0px;
+    width: 200px;
+  }
+  .tri-btn-box{
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+  } 
+}

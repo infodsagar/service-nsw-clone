@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Service/v1/style.css">
+    </link>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <nav class="container">
+
+        <div class="menu-container">
+            <button type="button" class="menu-bar"><i class="fa fa-bars"></i></button>
+            <button type="button" class="menu-text">Menu</button>
+        </div>
+
+        <div class="center">
+            <img src="https://i.ibb.co/jk8Jy9R/1.png" alt="" class="logo1">
+            <div class="splitter"></div>
+            <img src="https://i.ibb.co/3MNTgFx/2.png" alt="" class="logo2">
+        </div>
+
+
+        <div class="list" id="list">
+            <div class="close-btn">
+                <button class="close-btn-a"><i class="fa fa-close"></i></button>
+            </div>
+            <a href="#">Home</a>
+            <a href="#">Browse services</a>
+            <a href="#">Business</a>
+            <a href="#">Find locations</a>
+            <div class="sub-list">
+                <a href="#" class="myService">MyServiceNSW Account</a>
+
+                <div class="lang-btn-box">
+                    <button type="button" class="lang-btn" id="lang-btn-id">Change Language</button>
+                    <i class="fa fa-angle-down arrow-class-w" aria-hidden="true" id="arrow"></i>
+                </div>
+
+                <div class="lang">
+                    <a href="#">English</a>
+                    <a href="#">Afrikaans</a>
+                    <a href="#">Albanian</a>
+                    <a href="#">Arabic</a>
+                    <a href="#">Armenian</a>
+                    <a href="#">Azerbaijani</a>
+                    <a href="#">Basque</a>
+                    <a href="#">Belarusian</a>
+                    <a href="#">Bosnian</a>
+                    <a href="#">Bulgarian</a>
+                    <a href="#">Catalan</a>
+                    <a href="#">Chinese (Simplified)</a>
+                    <a href="#">Chinese (Traditional)</a>
+
+                </div>
+            </div>
+        </div>
+
+        <form action="" class="form">
+            <input type="text" class="search" placeholder="   Search" id="search-id" onfocus="remove()" onmouseout="add()">
+            <button type="submit" class="submit" id="submit"><i class="fa fa-search searchicon"></i></button>
+        </form>
+
+        <div class="search2-container">
+            <a href="#" class="search2"><i class="fa fa-search searchicon"></i></a>
+            <a href="#" class="search2text">Search</a>
+        </div>
+
+    </nav>
+
+    <img src="https://i.ibb.co/2vBGZVP/4.jpg" alt="" class="body-img-larger">
+    <img src="https://i.ibb.co/Sf5rvc0/5.jpg" alt="" class="body-img-large">
+    <img src="https://i.ibb.co/6gGPdm3/6.jpg" alt="" class="body-img-small">
+
+    <div class="body-container">
+  <p class="body-text">Service NSW makes it easier to find government information and services</p>
+
+  <form action="" class="form1">
+            <input type="text" class="search1" placeholder="      Search" id="search1" onfocus="remove1()" onmouseout="add1()">
+            <button type="submit" class="submit1" id="submit1"><i class="fa fa-search searchicon"></i></button>
+        </form>
+    </div>
+  
+<div class="tri-btn-box">
+  
+  <button class="popular-btn" type="button" id="popular-btn-id">
+                    Popular pages
+                    <i class="fa fa-angle-down popular-arrow" aria-hidden="true" id="arrow"></i>
+  </button>
+  
+  <ul class="popular-list popular-list-active" id="popular-list-id">
+    <li><a href="#">Renew rego</a></li>
+    <li><a href="#">Working with Children Check</a></li>
+    <li><a href="#">Transfer rego</a></li>
+    <li><a href="#">Apply for a NSW Seniors Card</a></li>
+    <li><a href="#">Renew or upgrade driver licence</a></li>
+    <li><a href="#">Register a birth</a></li>
+    <li><a href="#">Check rego</a></li>
+    <li><a href="#">Dine & Discover vouchers</a></li>
+    <li><a href="#">Change address with Roads</a></li>
+    <li><a href="#">Storms and floods support</a></li>
+    <li><a href="#">Notice of disposal</a></li>
+    <li><a href="#">Savings Finder</a></li>
+  </ul>
+
+  <button class="storm-btn" type="button" id="storm-btn-id">
+    Storms and floods
+    <i class="fa fa-angle-down storm-arrow" aria-hidden="true" id="arrow"></i>
+</button>
+
+<ul class="storm-list" id="storm-list-id">
+    <li><a href="#">Storm and flood support</a></li>
+    <li><a href="#">Recovery services</a></li>
+    <li><a href="#">Clean up advice</a></li>
+    <li><a href="#">Back home grant</a></li>
+    <li><a href="#">Financial support for individuals and households</a></li>
+    <li><a href="#">Help for businesses</a></li>
+    <li><a href="#">Property assessment program</a></li>
+    <li><a href="#">Disaster Assistance Finder</a></li>
+    <li><a href="#">Rental support payment</a></li>
+    
+  </ul>
+
+<button class="covid-btn" type="button" id="covid-btn-id">
+    Covid-19 support
+    <i class="fa fa-angle-down covid-arrow" aria-hidden="true" id="arrow"></i>
+</button>
+ 
+<ul class="covid-list" id="covid-list-id">
+    <li><a href="#">Supporting NSW during COVID-19</a></li>
+    <li><a href="#">Register a positive rapid antigen test result</a></li>
+    <li><a href="#">Changes to transactions due to COVID-19</a></li>
+    <li><a href="#">Dine & Discover vouchers</a></li>
+    <li><a href="#">Financial support for individuals and households</a></li>
+    <li><a href="#">COVID-19 vaccination certificate</a></li>
+    <li><a href="#">COVID Safe check-in</a></li>
+    <li><a href="#">Book a COVID-19 vaccination</a></li>
+    <li><a href="#">Help for business</a></li>
+    <li><a href="#">COVID-19 rules</a></li>
+    <li><a href="#">COVID-19 testing clinics</a></li>
+    <li><a href="#">Travellers entering NSW</a></li>
+  </ul>
+
+</div>
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+    <script src="/Service/v1/script.js"></script>
+</body>
+
+</html>
