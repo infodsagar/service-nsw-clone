@@ -658,11 +658,11 @@ body {
 
   .body-text {
     color: white;
-    font-size: 0.9rem;
-    width: 330px;
+    font-size: 0.5rem;
+    width: 70vw;
     font-weight: bold;
     margin-bottom: 20px;
-    margin-left: 3.3vw;
+    margin-left: 2vw;
   }
 
   .body-img-larger {
