@@ -699,8 +699,8 @@ body {
   }
 
   .submit1 {
-    height: 45px;
-    width: 45px;
+    height: 25px;
+    width: 25px;
     background-color: rgba(166, 38, 57, 1);
     border: none;
     border-radius: 0 6px 6px 0;
@@ -714,7 +714,7 @@ body {
 
   #submit1 > .fa-search {
     color: white;
-    font-size: 14px;
+    font-size: 12px;
   }
 }
 
@@ -1150,7 +1150,7 @@ body {
     justify-content: space-between;
     background-color: hsl(225, 100%, 20%);
     height: 280px;
-    padding: 20px 5vw 5px 30px;
+    padding: 20px 4vw 5px 30px;
     list-style: none;
     width: 100%;
     position: relative;
