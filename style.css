@@ -1232,7 +1232,7 @@ body {
   .covid-list {
     display: none;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     background-color: rgb(230, 230, 0);
     height: 320px;
     padding: 10px 2vw 5px 30px;
