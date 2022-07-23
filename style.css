@@ -440,9 +440,9 @@ body {
   }
 }
 
-/*********************************Body Max view*************************************/
+/*********************************Body lg view*************************************/
 
-@media screen and (min-width: 1110px) {
+@media screen and (min-width: 1111px) {
   .body-img-larger {
     display: flex;
     width: 100%;
@@ -510,7 +510,7 @@ body {
   }
 }
 
-/************************************ Medium Body view**************************/
+/************************************ MD view**************************/
 @media screen and (max-width: 1110px) {
   .body-img-larger {
     display: none;
@@ -579,7 +579,7 @@ body {
   }
 }
 
-/******************************** Small Body View ***********************************/
+/******************************** Small Body View ********************************/
 
 @media screen and (max-width: 930px) {
   .body-img-larger {
@@ -649,7 +649,7 @@ body {
   }
 }
 
-/******************************** Micro body view **************************************/
+/******************************** Micro body view *********************************/
 @media screen and (max-width: 700px) {
   .body-container {
     position: absolute;
@@ -719,7 +719,7 @@ body {
 }
 
 /*******************TRI-box max view ************************/
-@media screen and (min-width: 1110px) {
+@media screen and (max-width: 1234px) {
   .popular-btn {
     display: flex;
     background-color: hsl(225, 100%, 20%);
@@ -851,9 +851,148 @@ body {
   }
 }
 
+/*********Tri Box- XXL - View ***********************************/
+@media screen and (min-width: 1235px) {
+  .popular-btn {
+    display: flex;
+    background-color: hsl(225, 100%, 20%);
+    font-size: 22px;
+    width: 300px;
+    padding: 20px 20px 20px 20px;
+    border-radius: 3px;
+    margin-left: 15vw;
+    border: none;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .popular-arrow {
+    color: white;
+    margin-left: auto;
+  }
+  .popular-list {
+    display: none;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: hsl(225, 100%, 20%);
+    height: 150px;
+    padding: 10px;
+    list-style: none;
+    position: absolute;
+    top: 62px;
+    padding-left: 18vw;
+    padding-right: 18vw;
+  }
+  .popular-list-active {
+    display: flex;
+  }
+  .popular-list > li > a {
+    font-size: 16px;
+    color: white;
+  }
+  .popular-list > li {
+    padding: 5px;
+    width: 250px;
+  }
+  .storm-btn {
+    display: flex;
+    background-color: white;
+    font-size: 22px;
+    cursor: pointer;
+    width: 300px;
+    padding: 20px 20px 20px 20px;
+    border-radius: 3px;
+    margin-left: 10px;
+    border: none;
+    color: rgb(23, 17, 17);
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .storm-arrow {
+    color: black;
+    margin-left: auto;
+  }
+
+  .storm-list {
+    display: none;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: hsl(225, 100%, 20%);
+    height: 160px;
+    padding: 30px 100px 10px 40px;
+    list-style: none;
+    position: absolute;
+    top: 62px;
+    padding-left: 18vw;
+    padding-right: 18vw;
+  }
+
+  .storm-list-active {
+    display: flex;
+  }
+
+  .storm-list > li > a {
+    font-size: 16px;
+    color: white;
+  }
+  .storm-list > li {
+    padding: 10px 5px 5px 5px;
+    width: 260px;
+  }
+  .covid-btn {
+    display: flex;
+    background-color: rgb(230, 230, 0);
+    font-size: 22px;
+    cursor: pointer;
+    width: 300px;
+    padding: 20px 20px 20px 20px;
+    border-radius: 3px;
+    margin-left: 10px;
+    border: none;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .covid-arrow {
+    color: black;
+    margin-left: auto;
+  }
+  .covid-list {
+    display: none;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: rgb(230, 230, 0);
+    height: 170px;
+    padding: 30px 10px 10px 10px;
+    list-style: none;
+    position: absolute;
+    top: 62px;
+    padding-left: 18vw;
+    padding-right: 18vw;
+  }
+
+  .covid-list-active {
+    display: flex;
+  }
+
+  .covid-list > li > a {
+    font-size: 16px;
+    color: rgb(15, 15, 15);
+  }
+  .covid-list > li {
+    padding: 0px 0 10px 0;
+    width: 250px;
+  }
+  .tri-btn-box {
+    display: flex;
+    position: relative;
+  }
+}
 /**************************** Tri box large View ******************************/
 
-@media screen and (min-width: 930px) {
+@media screen and (max-width: 1234px) {
   .popular-btn {
     display: flex;
     background-color: hsl(225, 100%, 20%);
